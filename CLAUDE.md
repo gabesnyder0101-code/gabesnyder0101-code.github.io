@@ -10,8 +10,9 @@ Static GitHub Pages site for Darien Silversteen's resume and project portfolio, 
 
 - `index.html` — resume: education, relevant experience, school projects, extracurriculars, skills, awards. Contact info is intentionally email-only; the phone number from the source resume is left off for privacy.
 - `projects.html` — portfolio page, linked from the shared nav bar. Placeholder project cards are still in place; each has an HTML comment above the grid explaining how to copy/edit a card for a real project.
+- `styles.css` — shared stylesheet for both pages (no external CSS/JS dependencies, no framework).
 
-Both pages share the same inline `<style>` block (no external CSS/JS dependencies, no framework). Keep the two pages' nav bar and styling in sync if you change one.
+Both pages link the same `styles.css`. Keep the two pages' nav bar markup and shared class names in sync if you change one.
 
 ## Working on this repo
 
