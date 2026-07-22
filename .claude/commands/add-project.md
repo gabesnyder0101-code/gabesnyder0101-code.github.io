@@ -2,13 +2,17 @@
 description: Add a new project card to projects.html from a description, PDF, or image, then commit and push
 ---
 
-Add a new project to the portfolio site (`projects.html`). The user's input for this project follows below (a description, and/or a path to a PDF or image): $ARGUMENTS
+Add a new project to the portfolio site (`projects.html`). Anything the user already gave when invoking this command follows below (a description, and/or a path to a PDF or image) — it may be empty: $ARGUMENTS
 
 Follow this workflow:
 
-1. **Gather the source material.** If a PDF was given, extract its text (and any embedded photos if a real photo of the finished project would help the card — see step 3). If only a description was given, work from that directly.
+1. **Get the source material — file or interview.** This step is interactive; don't skip straight to writing the card from assumptions.
+   - If `$ARGUMENTS` already includes a file path (PDF/image) or a substantial description, start from that.
+   - Otherwise, ask the user directly in chat: do they want to upload/paste a file (PDF, photos, write-up), or would they rather answer a few quick questions about the project? Wait for their reply before proceeding.
+   - If interviewing, ask for what's actually missing, conversationally (not necessarily all at once): what the project is, when it happened (month/year), your specific role, what you did or built, and any outcome worth mentioning (award, working demo, etc). Don't interrogate for things a short description already covers.
+   - If a file was shared, extract its text (and check for embedded photos if a real photo of the finished project would help the card — see step 3).
 
-2. **Ask only if truly missing.** If the month/year of the project isn't stated or inferable, ask the user for it — don't guess. Everything else, write from what's given.
+2. **Ask only if still missing after that.** If the month/year isn't stated or inferable even after the file/interview, ask specifically for it — don't guess.
 
 3. **Write the card content:**
    - Title: short, specific, no people's names in it.
