@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darien Silversteen — Projects</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a.active {
+    color: var(--text);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.25rem;
+  }
+  nav a:hover {
+    color: var(--text);
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+  header.hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  header.hero h1 {
+    margin: 0 0 0.25rem;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+  }
+  header.hero p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+  .card h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+  }
+  .card p.meta {
+    margin: 0 0 0.6rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .card p.desc {
+    margin: 0 0 0.8rem;
+    font-size: 0.92rem;
+  }
+  .card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
+  }
+  .card .tag {
+    background: #f3f4f6;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+  }
+  .card a.link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 2rem 0;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Resume</a>
+  <a href="projects.html" class="active">Projects</a>
+</nav>
+
+<main>
+  <header class="hero">
+    <h1>Projects</h1>
+    <p>A few things I've built and worked on.</p>
+  </header>
+
+  <div class="project-grid">
+
+    <!--
+      HOW TO ADD A NEW PROJECT:
+      1. Copy one of the <div class="card">...</div> blocks below.
+      2. Paste it right before the closing </div> of .project-grid.
+      3. Edit the title, date/meta, description, tags, and link.
+      4. If the project has no live link/repo yet, delete the <a class="link"> line
+         or point it at a Google Doc / photo / video of the project instead.
+      5. Delete this comment block once real projects are in place, or leave it —
+         it won't show up on the page.
+    -->
+
+    <div class="card">
+      <h3>Project Title Goes Here</h3>
+      <p class="meta">Month Year</p>
+      <p class="desc">One or two sentences describing what the project is, what problem it solved, and what you learned or built.</p>
+      <div class="tags">
+        <span class="tag">Tag 1</span>
+        <span class="tag">Tag 2</span>
+      </div>
+      <a class="link" href="#" target="_blank" rel="noopener">View project &rarr;</a>
+    </div>
+
+    <div class="card">
+      <h3>Another Project Title</h3>
+      <p class="meta">Month Year</p>
+      <p class="desc">One or two sentences describing what the project is, what problem it solved, and what you learned or built.</p>
+      <div class="tags">
+        <span class="tag">Tag 1</span>
+        <span class="tag">Tag 2</span>
+      </div>
+      <a class="link" href="#" target="_blank" rel="noopener">View project &rarr;</a>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 Darien Silversteen
+</footer>
+
+</body>
+</html>

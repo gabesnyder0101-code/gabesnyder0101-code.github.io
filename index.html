@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darien Silversteen — Resume</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1c1e;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+  }
+  nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  nav a.active {
+    color: var(--text);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.25rem;
+  }
+  nav a:hover {
+    color: var(--text);
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 4rem;
+  }
+  header.hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  header.hero h1 {
+    margin: 0 0 0.25rem;
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+  }
+  header.hero p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  header.hero a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  section {
+    margin-bottom: 2.25rem;
+  }
+  section h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .entry {
+    margin-bottom: 1.25rem;
+  }
+  .entry:last-child {
+    margin-bottom: 0;
+  }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+  .entry-title {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .entry-subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+  .entry-meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  ul.bullets {
+    margin: 0.4rem 0 0;
+    padding-left: 1.2rem;
+  }
+  ul.bullets li {
+    margin-bottom: 0.2rem;
+    font-size: 0.95rem;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .skill-tag {
+    background: #f3f4f6;
+    color: var(--text);
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 2rem 0;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="active">Resume</a>
+  <a href="projects.html">Projects</a>
+</nav>
+
+<main>
+  <header class="hero">
+    <h1>Darien Silversteen</h1>
+    <p>Middletown, Delaware &nbsp;|&nbsp; <a href="mailto:Darien.silversteen@students.mot.k12.de.us">Darien.silversteen@students.mot.k12.de.us</a></p>
+  </header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">MOT Charter HS</span>
+        <span class="entry-meta">Expected May 2027</span>
+      </div>
+      <div class="entry-subtitle">High School Diploma — Engineering</div>
+      <ul class="bullets">
+        <li>Cumulative GPA: 3.95</li>
+        <li>Relevant Coursework: Engineering 1-4, Math 3-4, AP Calculus BC</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Relevant Experience</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Basketball Camp — Coach</span>
+        <span class="entry-meta">July 2023 – August 2023</span>
+      </div>
+      <div class="entry-subtitle">Middletown, Delaware</div>
+      <ul class="bullets">
+        <li>Coached and mentored a team of young players who had little knowledge of the game</li>
+        <li>Designed unique plays based on the abilities of each player</li>
+        <li>Led the team to a championship by implementing creative plays and strategy</li>
+        <li>Learned to be a leader and take initiative</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Furniture Building — Assistant Builder</span>
+        <span class="entry-meta">January 2022 – Present</span>
+      </div>
+      <div class="entry-subtitle">Townsend, Delaware</div>
+      <ul class="bullets">
+        <li>Analyzed directions to build furniture varying in difficulty</li>
+        <li>Built furniture with attention to detail, patience, and problem-solving skills</li>
+        <li>Learned to execute teamwork and communication with peers</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>School Projects</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Toothpick Bridge</span>
+        <span class="entry-meta">February 2025</span>
+      </div>
+      <ul class="bullets">
+        <li>Led a 3-person team to design and build the strongest bridge using toothpicks</li>
+        <li>Applied basic engineering principles to complete the build in 4 class periods</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Toothpick House</span>
+        <span class="entry-meta">March 2019</span>
+      </div>
+      <ul class="bullets">
+        <li>Independently built a house out of toothpicks with a functioning light</li>
+        <li>Developed a plan through an hour of brainstorming to ensure precision</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Extracurricular Activities</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Basketball Team — Shooting Guard</span>
+        <span class="entry-meta">December 2024</span>
+      </div>
+      <div class="entry-subtitle">Middletown, Delaware</div>
+      <ul class="bullets">
+        <li>Organized and strategized based on opponents</li>
+        <li>Took initiative to make teammates better through planning and leadership</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">Volleyball Team — Defensive Specialist</span>
+        <span class="entry-meta">March 2023</span>
+      </div>
+      <div class="entry-subtitle">Middletown, Delaware</div>
+      <ul class="bullets">
+        <li>Adapted to the game quickly, contributing to 8 wins</li>
+        <li>Was a top player through consistent learning and effort</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill-tag">Teamwork</span>
+      <span class="skill-tag">Reliability</span>
+      <span class="skill-tag">Leadership</span>
+      <span class="skill-tag">Problem-Solving</span>
+      <span class="skill-tag">Organizing</span>
+      <span class="skill-tag">Open Mind</span>
+      <span class="skill-tag">Initiative</span>
+      <span class="skill-tag">Patient</span>
+      <span class="skill-tag">Time-Management</span>
+      <span class="skill-tag">Adaptability</span>
+      <span class="skill-tag">Critical Thinking</span>
+      <span class="skill-tag">Attention to Detail</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Awards</h2>
+    <ul class="bullets">
+      <li>Leadership Award</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 Darien Silversteen
+</footer>
+
+</body>
+</html>
